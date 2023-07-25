@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="encuesta.css">
+</head>
+<body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Gracias por ayudarnos a mejorar nuestra plataforma</p>
+  <form id="survey-form">
+    <label id="name-label">Nombre
+      <input id="name" type="text" required placeholder="Tu nombre...">
+      </label>
+      <label id="email-label">Email
+      <input id="email" type="email" required placeholder="Tu email...">
+      </label>
+      <label id="number-label">Edad (opcional)
+      <input id="number" type="number" min="16" max="100" placeholder="16">
+      </label>
+      <label>Elige el tipo de trabajo
+      <select id="dropdown">
+        <option>Formación</option>
+        <option>Jornada completa</option>
+        <option>Media Jonada</option>
+      </select>
+      </label>
+
+      <label id:"recommend">Nos recomendarías?
+        <input name="recommend" type="radio" value="1">Seguro</input>
+        <input name="recommend"  type="radio" value="2">Puede</input>
+        <input name="recommend" type="radio" value="3">No estoy seguro</input>
+      </label>
+    <p>¿Qué skill te gustaría aprender?</p>
+    <label> <input id="checkbox" type="checkbox" name="skill" value="HTML">HTML</label>
+           <label><input id="checkbox" type="checkbox" name="skill" value="CSS">CSS</label>
+     <label><input id="checkbox" type="checkbox" name="skill" value="JS">JS</label>
+     <textarea placeholder="Cuéntanos algo de ti...." rows="3" cols="20" ></textarea>
+     <button id="submit" type="submit">ENVIAR
+      </button>
+    
+  </form>
+</body>
+</html>
